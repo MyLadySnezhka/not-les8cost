@@ -1,0 +1,48 @@
+/* Пример использования псевдокласса not */
+
+
+.character-content {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    width: 600px;
+}
+
+.item1,
+.item2 {
+    width: 50%;
+}
+
+.character-content :not(:nth-child(2n)) {
+    background-color: blueviolet;
+}
+
+
+
+/*body :not(div) {
+    color: orange;
+}*/
+
+
+/* .item1 > div:nth-child(2n+1) {
+    background-color: #000;
+    color: #fff;
+}
+
+.character-content :not(:nth-child) {
+    font-size: 64px;
+}
+
+.item2 > div:nth-child(2n) {
+    background-color: #000;
+    color: #fff;
+}
+
+.character-content :last-child {
+    background-color: aqua;
+}
+
+/* .character-content :not(:last-child) {
+    background-color: blue;
+} */
+
